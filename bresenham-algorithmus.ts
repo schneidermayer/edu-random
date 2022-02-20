@@ -102,10 +102,8 @@ function drawDot(x: number, y: number): void {
 
 /**
  * Gets if the provided point is in the image.
- * @param x - The horizontal position within
- * the image.
- * @param y - The vertical position within
- * the image.
+ * @param x - The horizontal position within the image.
+ * @param y - The vertical position within the image.
  */
 function isPointInImage(x: number, y: number): boolean {
     return x >= 0 && x < imageWidth && y >= 0 && y < imageHeight;
@@ -113,10 +111,8 @@ function isPointInImage(x: number, y: number): boolean {
 
 /**
  * Outputs the image data state to the console.
- * @param onChar - Character to render an
- * "on" pixel with.
- * @param offChar - Character to render an
- * "off" pixel with.
+ * @param onChar - Character to render an "on" pixel with.
+ * @param offChar - Character to render an "off" pixel with.
  */
 function outputImage(onChar = "x", offChar = " ") {
     let text = "";
@@ -133,24 +129,15 @@ function outputImage(onChar = "x", offChar = " ") {
 }
 
 /**
- * Creates an array of booleans where a pixel
- * is "on" when the value is `true` and "off"
- * when the value is `false`.
+ * Creates an array of booleans where a pixel is "on" when the value is `true` and "off" when the value is `false`.
  *
- * The pixel values are stored in rows
- * (row-major order) where the index of a
- * pixel in the array can be found via:
+ * The pixel values are stored in rows (row-major order) where the index of a pixel in the array can be found via:
  *
  *     index = y * imageWidth + x
  *
- * `x` is the horizontal position in the image
- * and `y` is the vertical position from the top
- * left corner.
+ * `x` is the horizontal position in the image and `y` is the vertical position from the top left corner.
  *
- * Note: This function has a return type annotation
- * of `boolean[]`. That means it's an array of
- * booleans. We'll learn more about this in a
- * future module.
+ * Note: This function has a return type annotation of `boolean[]`. That means it's an array of booleans.
  */
 function createImageData(): boolean[] {
     // create array of size `length` containing `false` values
