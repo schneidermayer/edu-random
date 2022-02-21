@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "noImplicitAny": false,
-    "outDir": "build",
+    "target": "ES2016",
+    "strict": true,
+    "outDir": "build/",
     "rootDir": ".",
-    "sourceMap": false
+    "sourceMap": false,
+    "removeComments": true,
+//    "module": "ES6",
+//    "moduleResolution": "Node"
   }
 }

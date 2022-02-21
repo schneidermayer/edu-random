@@ -129,7 +129,8 @@ function outputImage(onChar = "x", offChar = " ") {
 }
 
 /**
- * Creates an array of booleans where a pixel is "on" when the value is `true` and "off" when the value is `false`.
+ * Creates an array of booleans where a pixel is "on" whe
+ * n the value is `true` and "off" when the value is `false`.
  *
  * The pixel values are stored in rows (row-major order) where the index of a pixel in the array can be found via:
  *
