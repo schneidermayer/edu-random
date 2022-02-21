@@ -6,7 +6,5 @@
     "rootDir": ".",
     "sourceMap": false,
     "removeComments": true,
-//    "module": "ES6",
-//    "moduleResolution": "Node"
   }
 }

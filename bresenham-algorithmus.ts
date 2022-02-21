@@ -1,21 +1,23 @@
 // create the image data
 const imageWidth = 20;
 const imageHeight = 8;
-const imageData = createImageData();
+let imageData: boolean[] = createImageData();
+
 
 // draw smiley
-//drawRectangle(0, 0, 20, 8);
-//drawDot(7, 2);
-//drawDot(12, 2);
-//drawDot(4, 4);
-//drawHorizontalLine(4, 5, 12);
-//drawDot(15, 4);
+drawRectangle(0, 0, 20, 8);
+drawDot(7, 2);
+drawDot(12, 2);
+drawDot(4, 4);
+drawHorizontalLine(4, 5, 12);
+drawDot(15, 4);
+outputImage();
 
 // draw with bresenham alg
-//drawLine(1, 1, 20, 5);
-drawCircle(4, 4, 2);
+drawLine(1, 1, 20, 5);
+outputImage();
 
-// output what we drew to the console
+drawCircle(4, 4, 2);
 outputImage();
 
 
@@ -124,8 +126,8 @@ function outputImage(onChar = "x", offChar = " ") {
 
         text += imageData[i] ? onChar : offChar;
     }
-
     console.log(text);
+    reset();
 }
 
 /**
@@ -144,4 +146,8 @@ function createImageData(): boolean[] {
     // create array of size `length` containing `false` values
     const length = imageWidth * imageHeight;
     return new Array(length).fill(false);
+}
+
+function reset(): void {
+    imageData = createImageData();
 }
